@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    username: root
+    password: pganesh
+    url: jdbc:mysql://localhost:3306/restapi
+    driverClassName: com.mysql.cj.jdbc.Driver
+  application :
+     name : Ticket-api
+  
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+springdoc:
+  swagger-ui:
+    path:swagger-ui.html
+
+
+#server:
+#  port: 9092
+   
